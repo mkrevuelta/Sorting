@@ -1,6 +1,6 @@
 /*
     Copyright (c) 2013, Martin Knoblauch Revuelta
-    See accompanying ../LICENSE
+    See accompanying LICENSE
     
     ---------------------------------------------------------------
     heapsort.c
