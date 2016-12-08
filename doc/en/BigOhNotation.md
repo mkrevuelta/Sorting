@@ -1,5 +1,7 @@
 # Computational complexity and the "Big O" notation
 
+<p align="right"><i>Esta página está en inglés. Si usted lo prefiere, puede leer la <a href="../es/BigOhNotation.md">versión española</a></i></p>
+
 ## Introduction
 
 The [computational complexity](http://en.wikipedia.org/wiki/Computational_complexity_theory) of an algorithm is a measure of the time and space (in memory) required for its execution, depending on the size of the problem.
