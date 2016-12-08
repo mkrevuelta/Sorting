@@ -17,7 +17,7 @@ The original project name was "combsortcs2p-and-other-sorting-algorithms". By th
 
 ## Current state
 
-I plan to adapt all the contents to GitHub, starting with Heapsort, and then Smoothsort. But first I must adapt the pages about computational complexity...
+I plan to adapt all the contents to GitHub, starting with [Heapsort](src/heapsort.c), and then Smoothsort. But first I must adapt the pages about [computational complexity](doc/es/BigOhNotation.md)...
 
 Stay tuned ;-)
 
