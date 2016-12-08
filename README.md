@@ -3,8 +3,8 @@ Explanation and implementation of a few sorting algorithms, some well known, oth
 
 ## License
 
-1. The source code is distributed under an [src/LICENSE](MIT license).
+1. The source code is distributed under an [MIT license](src/LICENSE).
 
-2. The documentation is licensed under a [doc/LICENSE](Creative Commons Attribution 3.0 Unported License).
+2. The documentation is licensed under a [Creative Commons Attribution 3.0 Unported License](doc/LICENSE).
 
 
