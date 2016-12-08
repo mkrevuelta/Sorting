@@ -41,7 +41,7 @@ We will also analyse the average case. In the previous algorithm, supposing that
 
 We'll say that an algorithm takes **O(1)** time when its execution time does not depend on **N** (the size of the problem). For example:
 
-```
+```C
 double central_element (const double A[],        // Array of numbers
                         unsigned num)            // Size of the array
 {
@@ -52,7 +52,7 @@ The function `central_element()` will always take the same time to execute, no m
 
 The next function also takes **O(1)** time:
 
-```
+```C
 double random_sum (const double A[],             // Array of numbers
                    unsigned num)                 // Size of the array
 {
@@ -74,7 +74,7 @@ If we compare them, we will say that they both take **O(1)** time, but the const
 
 The next function adds the elements of some specific positions of an array:
 
-```
+```C
 double sum_powers_3 (const double A[],           // Array of numbers
                      unsigned num)               // Size of the array
 {
@@ -94,7 +94,7 @@ The base of the logarithm is irrelevant since the logarithms of a same number in
 
 The next function also takes **O(log N)**:
 
-```
+```C
 unsigned count_ones (unsigned n)      // Count the number of ones in
 {                                     // n's binary representation
     unsigned ones;
@@ -114,7 +114,7 @@ As a conclusion, when it comes to compare **O(1)** algorithms with **O(log N)** 
 
 The next function takes **O(N)** time:
 
-```
+```C
 double mean (const double A[],                   // Array of numbers
              unsigned num)                       // Size of the array
 {
@@ -130,7 +130,7 @@ double mean (const double A[],                   // Array of numbers
 
 It's not so obvious in the next case, but it also takes **O(N)** time. Whatever the function does to the data of the array is irrelevant. Watch carefully the relationship between the two loops:
 
-```
+```C
 void faa (double A[],                            // Array of numbers
           unsigned num)                          // Size of the array
 {
@@ -146,7 +146,7 @@ void faa (double A[],                            // Array of numbers
 
 The next function contains two nested loops:
 
-```
+```C
 unsigned fee (const double A[],                  // Array of numbers
               unsigned num)                      // Size of the array
 {
@@ -167,7 +167,7 @@ The external loop will execute log<sub>2</sub>(`num`) iterations. In each one of
 
 The next function contains two nested loops. Both make `num` iterations each time, so the total number of iterations of the inner loop will be `num`<sup>2</sup>.
 
-```
+```C
 unsigned fii (const double A[],                  // Array of numbers
               unsigned num)                      // Size of the array
 {
@@ -184,7 +184,7 @@ unsigned fii (const double A[],                  // Array of numbers
 
 The next function is an optimized version of the previous one. Note that the comparison `i<j` has been removed and, in the inner loop, the initial value of `j` has been changed. It will return the same result as `fii()`, but in half the time. Though, it's still **O(N<sup>2</sup>)** because the only thing that has changed is the constant factor:
 
-```
+```C
 unsigned foo (const double A[],                  // Array of numbers
               unsigned num)                      // Size of the array
 {
@@ -203,7 +203,7 @@ unsigned foo (const double A[],                  // Array of numbers
 
 **O(N<sup>3</sup>):**
 
-```
+```C
     for (i=0; i<num; i++)
         for (j=0; j<num; j++)
             for (k=0; k<num; k++)
@@ -212,7 +212,7 @@ unsigned foo (const double A[],                  // Array of numbers
 
 **O(N<sup>4</sup>)**:
 
-```
+```C
     for (i=0; i<num; i++)
         for (j=0; j<num; j++)
             for (k=0; k<num; k++)
@@ -238,7 +238,7 @@ If a function declares only a few variables of primitive types (`int`, `float`, 
 
 The next function computes the factorial of a number in **O(N)** time and using **O(1)** additional space:
 
-```
+```C
 double factorial_iter (unsigned n)
 {
     double f;
@@ -252,7 +252,7 @@ double factorial_iter (unsigned n)
 
 The next one computes the same, but using recursion:
 
-```
+```C
 double factorial_rec (unsigned n)
 {
     return n<=1 ? 1                       // If n<=1, end
@@ -266,7 +266,7 @@ Furthermore, as it makes `n-1` nested recursive calls, it uses **O(N)** addition
 
 Let's see another example of what not to do:
 
-```
+```C
 unsigned fibonacci (unsigned n)       // Fibonacci numbers:
 {                                     // 0, 1, 1, 2, 3, 5, 8, 13, ...
     return n==0 ? 0 :
@@ -282,7 +282,7 @@ The additional space required is _only_ **O(N)** because the longest sequence of
 
 The next function computes the same in **O(N)** time and using just **O(1)** additional space:
 
-```
+```C
 unsigned fibonacci_iter (unsigned n)  // Fibonacci numbers:
 {                                     // 0, 1, 1, 2, 3, 5, 8, 13, ...
     unsigned a, b, tmp;
