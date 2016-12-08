@@ -10,6 +10,25 @@ La notación de la ["O grande"](http://es.wikipedia.org/wiki/Cota_superior_asint
 
 La documentación de este proyecto utiliza la notación de la "O grande" para describir y comparar los distintos algoritmos de ordenación. Esta página explica informalmente lo necesario para comprender el uso de dicha notación.
 
+## Un ejemplo ilustrativo
+
+Supongamos que tenemos tres ciudades **A**, **B** y **C**. Queremos ordenarlas de menor a mayor según su número de habitantes. Podríamos intentar ordenarlas aplicando el siguiente algoritmo:
+
+  + Probar cada una de las 6 permutaciones posibles (**ABC**, **ACB**, **BAC**, **BCA**, **CAB** y **CBA**). Con cada una:
+    - Recorrer la permutación elegida **xyz** comparando la población de cada ciudad con la siguiente. Si la población de **x** es menor que la de **y**, y la de **y** es menor que la de **z**, hemos terminado.
+
+Puesto que sólo hay seis permutaciones posibles, este algoritmo ordenará las tres ciudades en muy poco tiempo. No se puede decir que tarda lo que un abrir y cerrar de ojos, porque un abrir y cerrar de ojos es una eternidad en comparación.
+
+Sin embargo, ¿cómo se portará ese algoritmo si aumentamos el número de ciudades?
+
+Si añadimos una cuarta ciudad **D**, el número de permutaciones se multiplica por cuatro, porque podemos insertar la **D** en cuatro posiciones distintas de cada una de las permutaciones de tres ciudades: **xyzD**, **xyDz**, **xDyz**, y **Dxyz**. En total tenemos veinticuatro permutaciones posibles: **ABCD**, **ABDC**, **ADBC**, **DABC**; **ACBD**, **ACDB**, **ADCB**, **DACB**; **BACD**... y así sucesivamente.
+
+Si añadimos una quinta ciudad **E**, esas veinticuatro permutaciones se multiplican por cinco, dando un total de ciento veinte nada menos. Sigue siendo mucho menos tiempo que un abrir y cerrar de ojos, pero no es buena señal. Además, analizar cada permutación cuesta ahora cuatro comparaciones, mientras que con tres ciudades sólo costaba dos. En total se harán hasta 480 comparaciones, mientras que con tres ciudades sólo se hacían un máximo de 12. ¡Ordenar cinco ciudades requiere cuarenta veces más tiempo que ordenar tres!
+
+En general, con **N** ciudades tendremos **N×(N-1)×(N-2)×...×1** permutaciones, es decir, **N!** (**N** "factorial"). Con 62 ciudades tenemos 62! = 31469973260387937525653122354950764088012280797258232192163168247821107200000000000000 permutaciones. Es un número tan grande que conviene expresarlo en notación científica: 62! ≈ 3'15×10<sup>85</sup>. ¡Esta cantidad es mayor que el número estimado de partículas elementales existentes en todo el universo observable!
+
+Queda claro que este algoritmo es absurdamente lento. Tan lento que no es práctico ni para ordenar unas pocas decenas de elementos. Un buen programador debe estar entrenado para llegar a esta conclusión a primera vista, sin necesidad de programar y ejecutar el algoritmo.
+
 **Continuará...**
 
 
