@@ -29,6 +29,14 @@ En general, con **N** ciudades tendremos **N×(N-1)×(N-2)×...×1** permutacion
 
 Queda claro que este algoritmo es absurdamente lento. Tan lento que no es práctico ni para ordenar unas pocas decenas de elementos. Un buen programador debe estar entrenado para llegar a esta conclusión a primera vista, sin necesidad de programar y ejecutar el algoritmo.
 
+## Tiempo
+
+El algoritmo anterior realiza como máximo **N!×(N-1)** comparaciones para ordenar **N** ciudades. Además necesitará ejecutar otras operaciones elementales, pero el número total siempre será proporcional a **N!×(N-1)**. Si necesita alguna cantidad fija adicional de tiempo al principio o al final, la despreciaremos. También despreciaremos cualquier factor constante que multiplique el tiempo total. No nos interesa calcular el tiempo exacto para ningún **N** determinado. Nos interesa la evolución a largo plazo. Por eso nos limitaremos a decir que como máximo tarda un tiempo proporcional a **N!×(N-1)**.
+
+Cabe destacar que el algoritmo anterior realizaría sólo **N-1** comparaciones en el mejor de los casos, es decir, cuando la primera permutación analizada resulte ser la del orden deseado.
+
+Distinguiremos también el caso medio. En el algoritmo anterior, suponiendo que existe la misma probabilidad para todas las permutaciones, el caso medio requerirá la mitad de tiempo que el peor caso. Como se trata de un factor constante, lo despreciaremos. Consideraremos que el tiempo del peor caso y el tiempo del caso medio pertenecen a la misma categoría.
+
 **Continuará...**
 
 

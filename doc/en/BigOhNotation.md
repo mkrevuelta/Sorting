@@ -27,7 +27,15 @@ If we add a fifth city **E**, these twenty four permutations get multiplied by f
 
 In general, with **N** cities we have **N×(N-1)×(N-2)×...×1** permutations, that is, **N!** (**N** "factorial"). With 62 cities we have 62! = 31469973260387937525653122354950764088012280797258232192163168247821107200000000000000 permutations. This number is so huge that we'll express it in scientific notation: 62! ≈ 3'15×10<sup>85</sup>. This amount is greater than the estimated number of particles contained in the whole observable universe!
 
-It should be clear by now that this algorithm is insanely slow. So slow that it is only practical to sort a few dozens of elements. A good programmer must be trained to reach this conclusion at first sight, without needing to implement and execute the algorithm.
+It should be clear by now that this algorithm is insanely slow. So slow that it isn't even practical for sorting a few dozens of elements. A good programmer must be trained to reach this conclusion at first sight, without needing to implement and execute the algorithm.
+
+## Time
+
+The previous algorithm makes up to **N!×(N-1)** comparisons in order to sort **N** cities. It also needs to execute other small operations, but the total number will be proportional to **N!×(N-1)** in any case. If it needs in addition some fixed amount of time at the beginning or at the end, we will ignore them. We will also disregard any constant factor that multiplies the total time. We are not interested in computing the exact time for any specific **N**. We are interested in the long term evolution as **N** grows. Therefore, we will simply say that it requires a maximum time proportional to **N!×(N-1)**.
+
+It's worth to mention that the previous algorithm would make only **N-1** comparisons in the best case, that is, when the first permutation evaluated happened to be the desired ordering.
+
+We will also analyse the average case. In the previous algorithm, supposing that every permutation has the same probability of being the desired ordering, the average case will require half the time of the worst case. Since this is a constant factor, we will disregard it. We will consider that the execution time of the average case and the execution time of the worst case belong in the same category.
 
 **To be continued...**
 
