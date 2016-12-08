@@ -9,3 +9,15 @@ Explicación e implementación de unos pocos algoritmos de ordenación, algunos 
 
 2. La documentación está bajo una [licencia de Creative Commons Reconocimiento 3.0 Unported](doc/LICENSE).
 
+## Historia
+
+Comencé este proyecto en 2013. Estuvo hospedado felizmente en Google Code hasta 2015, cuando finalmente lo cerraron.
+
+El nombre original del proyecto era "combsortcs2p-and-other-sorting-algorithms". Por aquel tiempo yo andaba jugando con variantes de Combsort.
+
+## Estado actual
+
+Pienso adaptar todo el contenido a GitHub, empezando por Heapsort, y después Smoothsort. Pero primero tengo que adaptar las páginas sobre complejidad computacional...
+
+Manténgase al tanto ;-)
+
