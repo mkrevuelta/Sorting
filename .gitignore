@@ -1,3 +1,7 @@
+# HTML files
+*.htm
+*.html
+
 # Object files
 *.o
 *.ko
