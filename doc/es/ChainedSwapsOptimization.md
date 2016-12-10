@@ -1,5 +1,7 @@
 # Optimización de los intercambios encadenados
 
+<p align="right"><i>This page is in Spanish. If you prefer, you can read the <a href="../en/ChainedSwapsOptimization.md">English version</a></i></p>
+
 La optimización de los intercambios encadenados, también conocida como el _hueco flotante_, es muy habitual en ciertos algoritmos de ordenación. Tanto que es difícil encontrar implementaciones de esos algoritmos que no hagan uso de ella.
 
 Esta optimización consiste en evitar asignaciones innecesarias. Por ejemplo, si hay que realizar tres intercambios seguidos...

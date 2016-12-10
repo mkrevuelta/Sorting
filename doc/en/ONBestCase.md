@@ -1,5 +1,7 @@
 # About the claims of O(N) best-case time
 
+<p align="right"><i>Esta página está en inglés. Si usted lo prefiere, puede leer la <a href="../es/ONBestCase.md">versión española</a></i></p>
+
 From time to time, somebody argues that all sorting algorithms can take **O(N)** time in the best case. The chain of reasoning goes like this:
 
    + Before actually sorting, we can check whether the data are already sorted. This can be done in **O(N)** time.

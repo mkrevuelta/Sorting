@@ -1,5 +1,7 @@
 # Acerca de las alegaciones de tiempos O(N) en el mejor caso
 
+<p align="right"><i>This page is in Spanish. If you prefer, you can read the <a href="../en/ONBestCase.md">English version</a></i></p>
+
 De vez en cuando, alguien argumenta que todos los algoritmos de ordenación pueden tardar **O(N)** en el mejor caso. La cadena de razonamiento es más o menos como sigue:
 
    + Antes de ordenar realmente, podemos comprobar si los datos ya están ordenados. Esto se puede hacer en tiempo **O(N)**.

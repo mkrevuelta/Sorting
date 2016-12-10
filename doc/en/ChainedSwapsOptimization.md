@@ -1,5 +1,7 @@
 # Optimization of the chained swaps
 
+<p align="right"><i>Esta página está en inglés. Si usted lo prefiere, puede leer la <a href="../es/ChainedSwapsOptimization.md">versión española</a></i></p>
+
 The chained swaps optimization, also known as _floating hole_, is quite usual in some specific sorting algorithms. So much that it is hard to find them implemented without this optimization.
 
 This optimization saves time by avoiding unnecessary assignments. For example, if we need to make three swaps in a row...

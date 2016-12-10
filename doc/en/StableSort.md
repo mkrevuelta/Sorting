@@ -1,5 +1,7 @@
 # Explanation of the term "stable sort"
 
+<p align="right"><i>Esta página está en inglés. Si usted lo prefiere, puede leer la <a href="../es/StableSort.md">versión española</a></i></p>
+
 While teaching sorting algorithms, people generally use numbers. The most usual is to sort in ascending order. Sometimes they introduce the small sophistication of sorting in descending order. However, if two numbers are equals, using one or another doesn't make any difference.
 
 Though, things are a bit more complicated in real life. I can sort my books according to many different criteria:

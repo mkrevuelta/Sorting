@@ -1,5 +1,7 @@
 # Explicación del término "ordenación estable"
 
+<p align="right"><i>This page is in Spanish. If you prefer, you can read the <a href="../en/StableSort.md">English version</a></i></p>
+
 Cuando se enseñan algoritmos de ordenación se suelen usar números. Lo más habitual es ordenar de menor a mayor. A veces también se introduce la pequeña sofisticación de ordenar de mayor a menor. En cualquier caso, si dos números son iguales, da lo mismo usar uno que otro.
 
 En la vida real, sin embargo, las cosas son un poco más complicadas. Yo puedo ordenar mis libros conforme a muchos criterios diferentes:
