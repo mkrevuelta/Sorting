@@ -17,7 +17,21 @@ The original project name was "combsortcs2p-and-other-sorting-algorithms". By th
 
 ## Current state
 
-I plan to adapt all the contents to GitHub, starting with [Heapsort](src/heapsort.c), and then Smoothsort. But first I must adapt the pages about [computational complexity](doc/en/BigOhNotation.md)...
+I plan to adapt all the contents to GitHub, starting with [Heapsort](doc/en/HeapSort.md), and then Smoothsort. But first I must adapt the pages about [computational complexity](doc/en/BigOhNotation.md)...
 
 Stay tuned ;-)
+
+## Table of contents
+
+   + Insertion sort
+   + Bubble sort
+   + Comb sort
+   + [Heap sort](doc/en/HeapSort.md)
+   + Smooth sort
+   + Quick sort
+   + Appendices
+      - ["Big O" notation](doc/en/BigOhNotation.md)
+      - [Stable sort](doc/en/StableSort.md)
+      - [About the claims of O(N) best case](doc/en/ONBestCase.md)
+      - [Optimization of the chained swaps](doc/en/ChainedSwapsOptimization.md)
 
