@@ -13,7 +13,7 @@ La siguiente tabla muestra algunas características importantes de este algoritm
 <table border=0>
 <tr><td>Peor caso:</td><td><b>O(N log N)</b></td></tr>
 <tr><td>Caso medio:</td><td><b>O(N log N)</b></td></tr>
-<tr><td>Mejor caso:</td><td><b>O(N log N)</b> con la optimización de Floyd. Sin la optimización de Floyd tarda <b>O(N)</b> en el extraño caso de "datos iguales". Con datos distintos (ya ordenados o sin ordenar) tarda <b>O(N log N)</b>. Vea "[Acerca de las alegaciones de tiempos O(N) en el mejor caso](ONBestCase.md)"</td></tr>
+<tr><td>Mejor caso:</td><td><b>O(N log N)</b> con la optimización de Floyd. Sin la optimización de Floyd tarda <b>O(N)</b> en el extraño caso de "datos iguales". Con datos distintos (ya ordenados o sin ordenar) tarda <b>O(N log N)</b>. Vea "<a href='ONBestCase.md'>Acerca de las alegaciones de tiempos O(N) en el mejor caso</a>"</td></tr>
 </table>
 </td>
 </tr>
