@@ -1,5 +1,7 @@
 # Heap sort
 
+<p align="right"><i>Esta página está en inglés. Si usted lo prefiere, puede leer la <a href="../es/HeapSort.md">versión española</a></i></p>
+
 ## Main characteristics
 
 The next table shows some important characteristics of this algorithm.
