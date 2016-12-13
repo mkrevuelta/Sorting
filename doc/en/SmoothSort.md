@@ -146,7 +146,7 @@ Dijstra's EWD796 proposed a more elegant method, but slightly cumbersome. The tr
 
 To advance to the next number of Leonardo simply do:
 
-```
+```C
     tmp = b;
     b = b + c + 1;
     c = tmp;
@@ -154,7 +154,7 @@ To advance to the next number of Leonardo simply do:
 
 And to go back to the previous Leonardo number:
 
-```
+```C
     tmp = c;
     c = b - c - 1;
     b = tmp;
