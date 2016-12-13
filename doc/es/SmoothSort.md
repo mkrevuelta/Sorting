@@ -24,7 +24,7 @@ La siguiente tabla muestra algunas características importantes de este algoritm
 
 NOTA: Si no entiende los *O(*_lo que sea_*)* vea [La notación de la "O grande"](BigOhNotation.md).
 
-Puede encontrar la implementación de este algoritmo en [smoothsort.c](../../src/smoothsort.c). Este proyecto contiene además dos variantes de este algoritmo. Puede encontrar sus implementaciones en [smoothsort_fib_1.c](../../src/smoothsort_fib_1.c) y [smoothsort_pow2_1.c](../../src/smoothsort_pow2_1.c).
+Puede encontrar la implementación de este algoritmo en [smoothsort.c](../../src/smoothsort.c). Este proyecto contiene además dos variantes de este algoritmo. Puede encontrar sus implementaciones en [smoothsort\_fib\_1.c](../../src/smoothsort_fib_1.c) y [smoothsort\_pow2\_1.c](../../src/smoothsort_pow2_1.c).
 
 ## Descripción del algoritmo de ordenación suave (smooth sort)
 
@@ -116,9 +116,9 @@ Dijkstra mencionó en el mismo EWD796 que podría haber utilizado otra lista de 
 > number of stretches with the Leonardo numbers. (I do not present
 > this ratio as a compelling argument.)"
 
-Si hubiera escogido esa serie de tamaños posibles habría obtenido un algoritmo como el implementado en [smoothsort_pow2_1.c](../../src/smoothsort_pow2_1.c).
+Si hubiera escogido esa serie de tamaños posibles habría obtenido un algoritmo como el implementado en [smoothsort\_pow2\_1.c](../../src/smoothsort_pow2_1.c).
 
-Por otro lado, si hubiera construído los montículos pequeños con sólo dos elementos (un padre y un hijo) habría obtenido un algoritmo como el implementado en [smoothsort_fib_1.c](../../src/smoothsort_fib_1.c). Respecto a esta posibilidad, Dijkstra hizo el siguiente comentario en su EWD796a:
+Por otro lado, si hubiera construído los montículos pequeños con sólo dos elementos (un padre y un hijo) habría obtenido un algoritmo como el implementado en [smoothsort\_fib\_1.c](../../src/smoothsort_fib_1.c). Respecto a esta posibilidad, Dijkstra hizo el siguiente comentario en su EWD796a:
 
 > "Remark 2. We can now partly justify our choice of the Leonardo
 > numbers as available stretch lengths, i.e. justify why we have
@@ -246,7 +246,7 @@ Si el nuevo montículo se va a fusionar, basta con hacer un _sift_. Por otro lad
 
 ## Optimización de los intercambios encadenados
 
-La [optimización de los intercambios encadenados](ChainedSwapsOptimization.md), también conocida como el _hueco flotante_, es habitual en varios algoritmos de ordenación. Las tres implementaciones incluidas en este proyecto (en [smoothsort.c](../../src/smoothsort.c), [smoothsort_fib_1.c](../../src/smoothsort_fib_1.c) y [smoothsort_pow2_1.c](../../src/smoothsort_pow2_1.c)) usan esta optimización en lugar de hacer simples intercambios.
+La [optimización de los intercambios encadenados](ChainedSwapsOptimization.md), también conocida como el _hueco flotante_, es habitual en varios algoritmos de ordenación. Las tres implementaciones incluidas en este proyecto (en [smoothsort.c](../../src/smoothsort.c), [smoothsort\_fib\_1.c](../../src/smoothsort_fib_1.c) y [smoothsort\_pow2\_1.c](../../src/smoothsort_pow2_1.c)) usan esta optimización en lugar de hacer simples intercambios.
 
 ## Comportamiento con datos casi ordenados
 
