@@ -42,8 +42,8 @@ It can also be applied to the next algorithms, but with a much more modest resul
    + Shell sort
    + Bubble sort
    + Comb sort
-   + Heap sort
-   + Smooth sort
+   + [Heap sort](HeapSort.md)
+   + [Smooth sort](SmoothSort.md)
 
 <br><br>
 <a href='../LICENSE'><img src='../img/cc_by_88x31.png' alt='Creative Commons License' /></a><br>

@@ -29,10 +29,10 @@ Los siguientes algoritmos realizan una ordenación *no* estable::
 
    + Selección (_selection sort_)
    + Rápido (_quick sort_)
-   + Montículo (_heap sort_)
+   + [Montículo (_heap sort_)](HeapSort.md)
    + Shell (_Shell sort_)
    + Peine (_comb sort_)
-   + Suave (_smooth sort_)
+   + [Suave (_smooth sort_)](SmoothSort.md)
 
 El único algoritmo de la categoría de tiempo **O(N log N)** (ver [notación de la "O grande"](BigOhNotation.md)) que realiza una ordenación estable es el de la mezcla (_merge sort_). El principal (y quizás el único) inconveniente de este algoritmo es que necesita **O(N)** espacio adicional. Curiosamente, cualquier algoritmo de ordenación no estable puede hacer una ordenación estable mediante el uso de **O(N)** espacio adicional.
 

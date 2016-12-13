@@ -20,11 +20,11 @@ De hecho, el caso de los datos _casi_ ordenados es muy importante. Diré que un 
 
 Esta es una propiedad natural de la ordenación por inserción y, en cierta medida, también de la burbuja pero estos algoritmos tardan **O(N<sup>2</sup>)** de media.
 
-El la liga de los **O(N log N)**, el mejor tiempo habitual es también **O(N log N)**. Así se comportan quick sort, heap sort, shell sort, comb sort y la implementación habitual de merge sort. Las notables excepciones son smooth sort y la variante _natural_ merge sort.
+El la liga de los **O(N log N)**, el mejor tiempo habitual es también **O(N log N)**. Así se comportan quick sort, [heap sort](HeapSort.md), shell sort, comb sort y la implementación habitual de merge sort. Las notables excepciones son [smooth sort](SmoothSort.md) y la variante _natural_ merge sort.
 
-Precisamente, el nombre de smooth sort tiene su origen en esta propiedad. Cuando la entrada cambia de ordenada a _casi_ ordenada, y después a menos y aún menos ordenada, el tiempo de ejecución sufre una transición suave (_smooth_, en inglés) de **O(N)** a **O(N log N)**.
+Precisamente, el nombre de [smooth sort](SmoothSort.md) tiene su origen en esta propiedad. Cuando la entrada cambia de ordenada a _casi_ ordenada, y después a menos y aún menos ordenada, el tiempo de ejecución sufre una transición suave (_smooth_, en inglés) de **O(N)** a **O(N log N)**.
 
-Heap sort es un caso especial. Si se implementa con cuidado y **sin** la optimización de Floyd, tarda **O(N)** cuando todos los datos de entrada son iguales. La transición de **O(N)** a **O(N log N)** es suave. Es decir, si _casi todos_ los datos son iguales, tarda _casi_ **O(N)**. No obstante, "datos iguales" es un caso especialmente restrictivo de "datos ya ordenados". En este sentido, heap sort no es comparable con smooth sort o con merge sort _natural_.
+[Heap sort](HeapSort.md) es un caso especial. Si se implementa con cuidado y **sin** la optimización de Floyd, tarda **O(N)** cuando todos los datos de entrada son iguales. La transición de **O(N)** a **O(N log N)** es suave. Es decir, si _casi todos_ los datos son iguales, tarda _casi_ **O(N)**. No obstante, "datos iguales" es un caso especialmente restrictivo de "datos ya ordenados". En este sentido, [heap sort](HeapSort.md) no es comparable con [smooth sort](SmoothSort.md) o con merge sort _natural_.
 
 
 <br><br>

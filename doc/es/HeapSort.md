@@ -130,7 +130,7 @@ Si los datos son distintos entre sí, la ordenación tarda **O(N log N)**. No im
 
 La razón es que el montículo es incompatible con los datos ordenados. Aunque los datos de entrada estén ordenados, la construcción del montículo invierte ese orden en cierta medida. El valor máximo queda en la posición inicial, por ejemplo. Por eso, una vez que se ha construido el montículo, la extracción de los datos en orden tarda necesariamente **O(N log N)**.
 
-La única manera de hacer que un algoritmo semejante tardase **O(N)** con datos ordenados (y _casi_ **O(N)** con datos _casi_ ordenados) sería diseñar un montículo en el que los hijos estuvieran en posiciones del array más bajas que la del padre. Esto requeriría que el montículo creciese por la cima en vez de crecer por la base. Esa es la clave del funcionamiento del algoritmo de ordenación suave (smooth sort).
+La única manera de hacer que un algoritmo semejante tardase **O(N)** con datos ordenados (y _casi_ **O(N)** con datos _casi_ ordenados) sería diseñar un montículo en el que los hijos estuvieran en posiciones del array más bajas que la del padre. Esto requeriría que el montículo creciese por la cima en vez de crecer por la base. Esa es la clave del funcionamiento del algoritmo de [ordenación suave (smooth sort)](SmoothSort.md).
 
 
 <br><br>

@@ -42,8 +42,8 @@ Se puede aplicar también a los siguientes algoritmos, aunque con un resultado m
    + Shell (_Shell sort_)
    + Burbuja (_bubble sort_)
    + CombSort (_comb sort_)
-   + Montículo (_heap sort_)
-   + Suave (_smooth sort_)
+   + [Montículo (_heap sort_)](HeapSort.md)
+   + [Suave (_smooth sort_)](SmoothSort.md)
 
 
 <br><br>

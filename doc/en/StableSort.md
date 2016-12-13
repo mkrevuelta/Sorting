@@ -29,10 +29,10 @@ The next algorithms perform a **non** stable sort:
 
    + Selection sort
    + Quick sort
-   + Heap sort
+   + [Heap sort](HeapSort.md)
    + Shell sort
    + Comb sort
-   + Smooth sort
+   + [Smooth sort](SmoothSort.md)
 
 The only algorithm of the **O(N log N)** time category (see ["big Oh" notation](BigOhNotation.md)) that performs a stable sort is merge sort. The main drawback (and probably the only one) of this algorithm is that it requires **O(N)** additional space. Interestingly, any sorting algorithm can be modified to make a stable sort by using **O(N)** additional space.
 

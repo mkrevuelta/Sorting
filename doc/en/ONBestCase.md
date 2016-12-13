@@ -20,11 +20,11 @@ Indeed, the case of _nearly_ sorted data is very important. I will claim that a 
 
 This is a natural property of insertion sort and, to some extent, of bubble sort too. But these are **O(N<sup>2</sup>)** on average.
 
-In the **O(N log N)** league, the usual best case time is also **O(N log N)**. This is the behaviour of quick sort, heap sort, shell sort, comb sort and the usual implementation of merge sort. The notable exceptions are smooth sort and _natural_ merge sort.
+In the **O(N log N)** league, the usual best case time is also **O(N log N)**. This is the behaviour of quick sort, [heap sort](HeapSort.md), shell sort, comb sort and the usual implementation of merge sort. The notable exceptions are [smooth sort](SmoothSort.md) and _natural_ merge sort.
 
-Precisely, smooth sort was named after this property. When the input changes from sorted to _nearly_ sorted, and then to less and less sorted, the execution time transitions _smoothly_ from **O(N)** to **O(N log N)**.
+Precisely, [smooth sort](SmoothSort.md) was named after this property. When the input changes from sorted to _nearly_ sorted, and then to less and less sorted, the execution time transitions _smoothly_ from **O(N)** to **O(N log N)**.
 
-Heap sort is a special case. If it is implemented carefully and **without** Floyd's optimization, it takes **O(N)** time when all the input data are equal. The transition from **O(N)** to **O(N log N)** is smooth. That is, if _nearly all_ data are equal, it takes _nearly_ **O(N)**. Though, "equal data" is a specially restrictive case of "already sorted data". In this sense, heap sort is not comparable to smooth sort or _natural_ merge sort.
+[Heap sort](HeapSort.md) is a special case. If it is implemented carefully and **without** Floyd's optimization, it takes **O(N)** time when all the input data are equal. The transition from **O(N)** to **O(N log N)** is smooth. That is, if _nearly all_ data are equal, it takes _nearly_ **O(N)**. Though, "equal data" is a specially restrictive case of "already sorted data". In this sense, [heap sort](HeapSort.md) is not comparable to [smooth sort](SmoothSort.md) or _natural_ merge sort.
 
 
 <br><br>

@@ -130,7 +130,7 @@ If the data are distinct, heap sort takes **O(N log N)** time. Having them alrea
 
 The reason is that the heap is incompatible with sorted data. Even if the data are already sorted, the heap building inverts this order to some degree. The maximum value, for instance, is moved to the initial position of the array. Thus, once the heap has been built, the extraction of the data in order takes necessarily **O(N log N)** time.
 
-The only way to make a similar algorithm take **O(N)** time with sorted data (and _nearly_ **O(N)** with _nearly_ sorted data) would be to design a heap in which the children took lower positions than the parent in the array. This would require the heap to grow by the top instead of growing by the base. This is the key to smooth sort.
+The only way to make a similar algorithm take **O(N)** time with sorted data (and _nearly_ **O(N)** with _nearly_ sorted data) would be to design a heap in which the children took lower positions than the parent in the array. This would require the heap to grow by the top instead of growing by the base. This is the key to [smooth sort](SmoothSort.md).
 
 
 <br><br>
