@@ -1,6 +1,6 @@
 /*
     Copyright (c) 2013, Martin Knoblauch Revuelta
-    See accompanying LICENSE.TXT
+    See accompanying LICENSE
     
     ---------------------------------------------------------------
     smoothsort_fib_1.c
